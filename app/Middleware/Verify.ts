@@ -1,4 +1,3 @@
-// import { Response } from '@adonisjs/http-server/build/standalone'
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
 export default class Verify {
