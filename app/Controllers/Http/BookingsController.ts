@@ -7,7 +7,6 @@ export default class BookingsController {
     public async index({response} : HttpContextContract)
     {
         const index = await Booking.query().preload('fields')
-        // const a = 1
         return response.status(200).json(index)
     }
     public async store({request, response, auth} : HttpContextContract)
